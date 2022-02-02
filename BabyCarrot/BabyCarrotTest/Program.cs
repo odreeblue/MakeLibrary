@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BabyCarrot.Tools;
-
+using BabyCarrot.Extensions;
 namespace BabyCarrotTest
 {
     internal class Program
@@ -13,17 +13,16 @@ namespace BabyCarrotTest
         // 윈도우 서비스 프로그램은 백그라운드에서 로그를 남기는 일이 잦음
         static void Main(string[] args)
         {
-            LogManager log = new LogManager(null,"_BabyCarrotText");
-            log.WriteLine("[Begin Processing]------");
-            for (int index = 0; index < 10 ; index++)
-            {
-                log.WriteLine("Processing: " + index);
-                System.Threading.Thread.Sleep(500);
-                // Do
-                log.WriteLine("Done:  " + index);
-            }
-            log.WriteLine("[Begin Processing]------");
-            
+            //string temp = "test";
+            string temp = "12/08/2015 10:10";
+            Console.WriteLine("IsNumeric? : "+ temp.IsNumeric());
+            Console.WriteLine("IsDateTime? : " + temp.IsDateTime());
+            DateTime temp2 = new DateTime(2022,2,10);
+            Console.WriteLine(temp2.FirstDateOfMonth().Date);
+            Console.WriteLine(temp2.LastDateOfMonth().Date);
+            Console.ReadLine();
+
         }
     }
+
 }
