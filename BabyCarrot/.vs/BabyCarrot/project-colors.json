@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f047d409-c273-4a55-b999-463ef038479a": {
+      "ProjectGuid": "f047d409-c273-4a55-b999-463ef038479a",
+      "DisplayName": "BabyCarrot",
+      "ColorIndex": 0
+    },
+    "0aca2687-515a-4426-90b0-63bd01244dba": {
+      "ProjectGuid": "0aca2687-515a-4426-90b0-63bd01244dba",
+      "DisplayName": "BabyCarrotTest",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

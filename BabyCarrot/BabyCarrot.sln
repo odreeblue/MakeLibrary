@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabyCarrot", "BabyCarrot\BabyCarrot.csproj", "{F047D409-C273-4A55-B999-463EF038479A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BabyCarrotTest", "BabyCarrotTest\BabyCarrotTest.csproj", "{0ACA2687-515A-4426-90B0-63BD01244DBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F047D409-C273-4A55-B999-463EF038479A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F047D409-C273-4A55-B999-463EF038479A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F047D409-C273-4A55-B999-463EF038479A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F047D409-C273-4A55-B999-463EF038479A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ACA2687-515A-4426-90B0-63BD01244DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACA2687-515A-4426-90B0-63BD01244DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACA2687-515A-4426-90B0-63BD01244DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACA2687-515A-4426-90B0-63BD01244DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D66467B9-4033-4FE9-B76F-71FE81F99284}
+	EndGlobalSection
+EndGlobal
