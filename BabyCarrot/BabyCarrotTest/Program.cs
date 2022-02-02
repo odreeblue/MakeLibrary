@@ -13,14 +13,21 @@ namespace BabyCarrotTest
         // 윈도우 서비스 프로그램은 백그라운드에서 로그를 남기는 일이 잦음
         static void Main(string[] args)
         {
-            //string temp = "test";
-            string temp = "12/08/2015 10:10";
-            Console.WriteLine("IsNumeric? : "+ temp.IsNumeric());
-            Console.WriteLine("IsDateTime? : " + temp.IsDateTime());
-            DateTime temp2 = new DateTime(2022,2,10);
-            Console.WriteLine(temp2.FirstDateOfMonth().Date);
-            Console.WriteLine(temp2.LastDateOfMonth().Date);
-            Console.ReadLine();
+            string contents = "Hello there, <br />This is Derek";
+            EmailManager.Send("receiver@test.com", "Hi...", contents);
+
+            EmailManager email = new EmailManager("smtp.com",25,"id","password");
+            email.From = "sender@test.com";
+            email.To.Add("receiver@test.com");
+            email.Subject = "Subject";
+            email.Body = contents;
+            email.Send();
+
+            email.To.Clear();
+            email.To.Add("Receiver2@test.com");
+            email.Subject = "Hi Derek";
+            email.Send();
+
 
         }
     }
