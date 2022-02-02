@@ -13,20 +13,17 @@ namespace BabyCarrotTest
         // 윈도우 서비스 프로그램은 백그라운드에서 로그를 남기는 일이 잦음
         static void Main(string[] args)
         {
-            LogManager log = new LogManager();
+            LogManager log = new LogManager(null,"_BabyCarrotText");
             log.WriteLine("[Begin Processing]------");
             for (int index = 0; index < 10 ; index++)
-                {
+            {
                 log.WriteLine("Processing: " + index);
                 System.Threading.Thread.Sleep(500);
                 // Do
                 log.WriteLine("Done:  " + index);
             }
-
-            
             log.WriteLine("[Begin Processing]------");
-            Console.WriteLine(Application.Root);
-            Console.ReadLine();
+            
         }
     }
 }
